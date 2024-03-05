@@ -1,0 +1,219 @@
+.ag-canvas {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  position: relative;
+  visibility: visible;
+
+  width: 100%;
+  height: 100%;
+  padding: 3rem 1rem;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.ag-canvas_svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  margin-left: 1rem;
+}
+.ag-canvas_svg path {
+  fill: #853a0e;
+  fill-opacity: 1;
+  stroke: #78350f;
+  stroke-opacity: 1;
+  stroke-width: 0.5;
+  transition: 0.5s;
+}
+
+.ag-canvas_svg path:hover {
+  fill: #58260a;
+  fill-opacity: 1;
+  stroke: #78350f;
+  stroke-opacity: 1;
+  stroke-width: 0.5;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 767px) {
+  .ag-canvas {
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    height: auto;
+    padding: 4rem 1rem 1rem;
+  }
+  .ag-canvas_svg {
+    max-height: calc(100% - 6rem);
+    margin-left: 0;
+  }
+}
+
+#BR,
+#BO,
+#GY,
+#SR,
+#GF,
+#CO,
+#AR {
+  fill: #b97a19;
+}
+
+#EC,
+#VE,
+#CA,
+#MX,
+#GT,
+#SV,
+#HN,
+#DO,
+#NI,
+#PA,
+#BZ,
+#CR,
+#CU,
+#AU,
+#ID,
+#CD,
+#CF,
+#NZ,
+#GH,
+#RU {
+  fill: #a8560a;
+}
+
+#US,
+#GL,
+#ML,
+#FR,
+#NL,
+#DE,
+#CH,
+#IT,
+#SI,
+#AT,
+#CZ,
+#PL,
+#BG,
+#MD,
+#UA,
+#GR,
+#AU,
+#SK,
+#RS,
+#HR,
+#BA,
+#ME,
+#MK,
+#AL,
+#RO,
+#MD,
+#BY,
+#LV,
+#EE,
+#TR,
+#FI,
+#NO,
+#GE,
+#AZ,
+#AM,
+#XK,
+#LT,
+#HU,
+#KZ,
+#UZ,
+#TM,
+#KG,
+#TJ,
+#KP,
+#JP,
+#CN {
+  fill: #96440c;
+}
+
+#BR:hover,
+#BO:hover,
+#GY:hover,
+#SR:hover,
+#GF:hover,
+#CO:hover,
+#AR:hover {
+  fill: #835612;
+}
+
+#EC:hover,
+#VE:hover,
+#CA:hover,
+#MX:hover,
+#GT:hover,
+#SV:hover,
+#HN:hover,
+#DO:hover,
+#NI:hover,
+#PA:hover,
+#BZ:hover,
+#CR:hover,
+#CU:hover,
+#AU:hover,
+#ID:hover,
+#CD:hover,
+#CF:hover,
+#NZ:hover,
+#GH:hover,
+#RU:hover {
+  fill: #844408;
+}
+
+#US:hover,
+#GL:hover,
+#ML:hover,
+#FR:hover,
+#NL:hover,
+#DE:hover,
+#CH:hover,
+#IT:hover,
+#SI:hover,
+#AT:hover,
+#CZ:hover,
+#PL:hover,
+#BG:hover,
+#MD:hover,
+#UA:hover,
+#GR:hover,
+#AU:hover,
+#SK:hover,
+#RS:hover,
+#HR:hover,
+#BA:hover,
+#ME:hover,
+#MK:hover,
+#AL:hover,
+#RO:hover,
+#MD:hover,
+#BY:hover,
+#LV:hover,
+#EE:hover,
+#TR:hover,
+#FI:hover,
+#NO:hover,
+#GE:hover,
+#AZ:hover,
+#AM:hover,
+#XK:hover,
+#LT:hover,
+#HU:hover,
+#KZ:hover,
+#UZ:hover,
+#TM:hover,
+#KG:hover,
+#TJ:hover,
+#KP:hover,
+#JP:hover,
+#CN:hover {
+  fill: #682e08;
+}
