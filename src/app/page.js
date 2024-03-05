@@ -4,6 +4,8 @@ import CustomButton from "@/components/buttons/atoms/custom_buttons";
 import FlyShoe from "@/components/absolute_photos/fly_shoe";
 import IconWithColor from "@/components/absolute_photos/icon_with_color";
 import WorldMap from "@/components/world_map/world_map";
+import CustomCarousel from "@/components/comments/atoms/carousel";
+import CollectionCarousel from "@/components/collections/atoms/carousel";
 
 export default function Home() {
   return (
@@ -16,6 +18,8 @@ export default function Home() {
       <FlyShoe />
       <IconWithColor />
       <WorldMap />
+      <CustomCarousel />
+      <CollectionCarousel />
     </>
   );
 }

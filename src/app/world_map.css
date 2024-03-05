@@ -132,7 +132,8 @@
 #TJ,
 #KP,
 #JP,
-#CN {
+#CN,
+#ZA {
   fill: #96440c;
 }
 
@@ -214,6 +215,7 @@
 #TJ:hover,
 #KP:hover,
 #JP:hover,
-#CN:hover {
+#CN:hover,
+#ZA:hover {
   fill: #682e08;
 }

@@ -3,7 +3,7 @@ import "@/app/world_map.css";
 export default function WorldMap() {
   return (
     <>
-      <div className="w-[1050px]">
+      <div className="w-[1050px] bg-custom-amber">
         <div
           className="ag-canvas"
           dangerouslySetInnerHTML={{
