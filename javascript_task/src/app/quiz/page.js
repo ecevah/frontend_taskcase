@@ -49,7 +49,9 @@ const Quiz = () => {
   }, [data]);
 
   const handleAnswer = (answer) => {
-    setAnswers([...answers, answer]);
+    if (currentQuestionIndex <= 9) {
+      setAnswers([...answers, answer]);
+    }
     if (currentQuestionIndex < 9) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
       setTimeLeft(30);
