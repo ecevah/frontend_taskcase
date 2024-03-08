@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+body {
+  width: 100vw;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 251, 235, 1) 0%,
+    rgba(255, 255, 255, 1) 90%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#layout {
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#buyShadow {
+  box-shadow: 0px 25px 50px -12px rgba(255, 255, 255, 0.25);
+}
+
+#mockupShadow {
+  box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+#videoCardShadow {
+  box-shadow: 0px 25px 20px -5px rgba(0, 0, 0, 0.1);
+}
+
+.custom-width {
+  width: calc(100vw - 80px);
+}
+
+.collectionShadow {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 0px 4px 0px rgba(0, 0, 0, 0.07);
+}
