@@ -11,6 +11,8 @@ import Image from "next/image";
 import { WAVES_BG_PATH } from "@/constant/constant";
 import WorldMap from "@/components/atoms/world_map/world_map";
 import World from "@/components/tamplates/world";
+import Market from "@/components/atoms/footer/market";
+import Footer from "@/components/tamplates/footer";
 
 export default function Home() {
   return (
@@ -24,6 +26,7 @@ export default function Home() {
       <CommentTemplate />
       <Collection />
       <World />
+      <Footer />
     </>
   );
 }

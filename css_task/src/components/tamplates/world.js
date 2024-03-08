@@ -4,7 +4,7 @@ const World = (props) => {
   return (
     <>
       <div className="w-full h-[717px] bg-custom-amber relative z-[99] flex flex-col justify-center items-center">
-        <div className="absolute top-[42px] right-[calc((100%-1150px)/2)]">
+        <div className="absolute py-[42px] right-[calc((100%-1150px)/2)]">
           <WorldMap />
         </div>
         <div className=" flex flex-col justify-start items-center">

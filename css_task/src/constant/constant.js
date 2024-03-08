@@ -25,6 +25,14 @@ export const PLAY_PATH = "/svg/play.svg";
 export const CHECK_PATH = "/svg/check.svg";
 export const WAVES_PATH = "/svg/wawes.svg";
 export const WAVES_BG_PATH = "/svg/Waves.svg";
+export const WORD_ICON_PATH = "/svg/world_icon.svg";
+export const TWITTER_PATH = "/svg/twitter.svg";
+export const YOUTUBE_PATH = "/svg/youtube.svg";
+export const FACEBOOK_PATH = "/svg/facebook.svg";
+export const INSTAGRAM_PATH = "/svg/instagram.svg";
+export const LINKEDIN_PATH = "/svg/linkedin.svg";
+export const GOOGLE_PLAY_PATH = "/svg/GooglePlay.svg";
+export const APP_STORE_PATH = "/svg/AppStore.svg";
 
 //WebpImage
 export const PIEDRA_PATH = "/webp/piedra.webp";
@@ -370,3 +378,42 @@ export const TOOLTIP_POINTERS = [
     imageLocation: "mb-[60px]",
   },
 ];
+
+export const SOCIAL_ARRAY = [
+  YOUTUBE_PATH,
+  FACEBOOK_PATH,
+  TWITTER_PATH,
+  INSTAGRAM_PATH,
+  LINKEDIN_PATH,
+];
+
+export const FOOTER = {
+  items: [
+    {
+      title: "Product",
+      item: ["Pricing", "Overview", "Browse", "Accessibility", "Five"],
+    },
+    {
+      title: "Solutions",
+      item: ["Brainstorming", "Ideation", "Wireframing", "Research", "Design"],
+    },
+    {
+      title: "Support",
+      item: [
+        "Contact Us",
+        "Developers",
+        "Documentation",
+        "Integrations",
+        "Reports",
+      ],
+    },
+  ],
+  social: {
+    title: "Get the App",
+    market: [APP_STORE_PATH, GOOGLE_PLAY_PATH],
+  },
+  copyright: {
+    title: "Collers @ 2023. All rights reserved.",
+    items: ["Terms", "Privacy", "Contact"],
+  },
+};
