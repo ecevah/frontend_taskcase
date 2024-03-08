@@ -11,16 +11,16 @@
 
   width: 100%;
   height: 100%;
-  padding: 3rem 1rem;
   opacity: 1;
   transition: opacity 0.5s;
+
+  z-index: 0;
 }
 .ag-canvas_svg {
   display: block;
-  width: 100%;
+  width: 960px;
   height: auto;
-  max-height: 100%;
-  margin-left: 1rem;
+  max-height: 633px;
 }
 .ag-canvas_svg path {
   fill: #853a0e;
@@ -218,4 +218,55 @@
 #CN:hover,
 #ZA:hover {
   fill: #682e08;
+}
+
+.world-map-container {
+  width: 1049px;
+  height: 633px;
+  position: relative;
+}
+
+.tooltip-marker {
+  height: 24px;
+  width: 24px;
+  background-color: transparent;
+  border: 3px solid #a3e635;
+  border-radius: 50%;
+  position: absolute;
+  top: 112px;
+  left: 298px;
+  cursor: pointer; /* Changes the cursor to indicate it's clickable/hoverable */
+}
+
+.tooltip-marker:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position the tooltip above the marker */
+  left: 50%;
+  margin-left: -60px; /* Use half of the width value to align the tooltip */
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s; /* Smooth transitions for opacity and visibility */
+}
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* Arrow bottom position */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: white transparent transparent transparent; /* Triangle shape */
 }

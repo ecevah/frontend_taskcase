@@ -9,6 +9,8 @@ import VideoCard from "@/components/tamplates/video_card";
 import Collection from "@/components/tamplates/collection";
 import Image from "next/image";
 import { WAVES_BG_PATH } from "@/constant/constant";
+import WorldMap from "@/components/atoms/world_map/world_map";
+import World from "@/components/tamplates/world";
 
 export default function Home() {
   return (
@@ -21,6 +23,7 @@ export default function Home() {
       <VideoCard />
       <CommentTemplate />
       <Collection />
+      <World />
     </>
   );
 }
