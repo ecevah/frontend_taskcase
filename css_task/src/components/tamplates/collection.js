@@ -85,6 +85,7 @@ Nec magna sed interdum sit purus tellus. Et volutpat proin neque placerat at bib
               </div>
               <div
                 id="mockupShadow"
+                data-aos="fade-up"
                 className={`w-[256px] h-[286px] rounded-[10px] ${
                   COLLECTION_CARD[
                     state + 1 < COLLECTION_CARD.length ? state + 1 : 0

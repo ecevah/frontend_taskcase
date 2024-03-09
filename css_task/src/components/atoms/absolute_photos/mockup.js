@@ -6,6 +6,7 @@ const Mockup = (props) => {
     <>
       <div
         id="mockupShadow"
+        data-aos="fade-up"
         className={`${props.width ?? "w-[510px]"} ${
           props.height ?? "h-[340px]"
         } bg-white border-solid border-white border-[5px] rounded-[20px] flex flex-col justify-start items-start overflow-hidden m-0`}

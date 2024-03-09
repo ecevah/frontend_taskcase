@@ -1,37 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Baykar Frontend Case Study
 
-## Getting Started
+This project is a responsive web application based on a provided Figma design, implemented using Next.js, Tailwind CSS, and additional CSS for styling. The project adopts an atomic design architecture to facilitate scalability and ease of maintenance.
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The application is designed to be fully responsive, ensuring compatibility with a wide range of devices and screen sizes. By leveraging the principles of atomic design, the project is structured into atoms, molecules, organisms, templates, and pages, creating a comprehensive library of reusable components.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Next.js**: Chosen for its server-side rendering capabilities, ease of routing, and integration with React.
+- **Tailwind CSS & Custom CSS**: Used for styling, with Tailwind CSS providing utility-first classes that speed up the development process, and custom CSS for additional specific styling needs.
+- **AOS (Animate On Scroll)**: Implements smooth and animated scroll loading effects for a more dynamic user experience.
+- **Swiper**: Utilized for creating responsive and interactive sliders and carousels within the application.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Features
 
-## Learn More
+- **Responsive Design**: The layout adapts to different screen sizes, ensuring a consistent user experience across all devices.
+- **Dynamic Design Elements**: Functionalities such as forward and backward buttons for navigation within elements, enhancing interactivity.
+- **Animation and Interactivity**: Leveraging AOS for element animations on scroll and Swiper for carousel features, the application provides a lively and engaging user interface.
+- **Atomic Design Architecture**: Structured for scalability and ease of modifications, facilitating future developments and simplifications in adding or removing elements through modifications in arrays.
 
-To learn more about Next.js, take a look at the following resources:
+## Project Setup
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To run this project locally, follow these steps:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Clone the repository:
+   ```
+   git clone https://github.com/ecevah/baykar_frontend
+   ```
+2. Navigate to the project directory:
+   ```
+   cd css_task
+   ```
+3. Install dependencies:
+   ```
+   npm install
+   ```
+4. Start the development server:
+   ```
+   npm run dev
+   ```
+   The application will be available at `http://localhost:3000`.
 
-## Deploy on Vercel
+![Css Task](https://github.com/ecevah/baykar_frontend/blob/main/css_task/public/screenshots/Ekran%20Resmi%202024-03-09%2012.34.40.png "CSS Task")
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![Css Task](https://github.com/ecevah/baykar_frontend/blob/main/css_task/public/screenshots/Ekran%20Resmi%202024-03-09%2012.35.08.png "CSS Task")
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# baykar_frontend
+![Css Task](https://github.com/ecevah/baykar_frontend/blob/main/css_task/public/screenshots/Ekran%20Resmi%202024-03-09%2012.35.02.png "CSS Task")
+
+![Css Task](https://github.com/ecevah/baykar_frontend/blob/main/css_task/public/screenshots/Ekran%20Resmi%202024-03-09%2012.35.58.png "CSS Task")
+
+![Css Task](https://github.com/ecevah/baykar_frontend/blob/main/css_task/public/screenshots/Ekran%20Resmi%202024-03-09%2012.34.49.png "CSS Task")
+
+![Css Task](https://github.com/ecevah/baykar_frontend/blob/main/css_task/public/screenshots/Ekran%20Resmi%202024-03-09%2012.35.55.png "CSS Task")
