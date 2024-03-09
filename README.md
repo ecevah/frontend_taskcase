@@ -14,6 +14,8 @@ To implement a responsive interface design from a provided Figma file, using Tai
 - Utilizes Tailwind/Bootstrap to ensure the interface is responsive across different devices.
 - Dynamic elements are thoroughly implemented and tested to guarantee they function as expected.
 
+![Css Task](https://miro.medium.com/v2/resize:fit:1400/1*qKxKigEWozxZ-yrjpwvGJg.png "CSS Task")
+
 ## Task 2: Script's Operating System
 
 ### Objective
