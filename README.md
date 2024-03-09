@@ -52,3 +52,7 @@ npm run dev
 Access the application by opening http://localhost:3000 in your browser.
 
 - Thank you for considering my submission for the Baykar technical interview.
+
+![Css Task](https://github.com/ecevah/baykar_frontend/blob/main/css_task/public/screenshots/Ekran%20Resmi%202024-03-09%2012.34.40.png "CSS Task")
+
+![Javascript Task](https://github.com/ecevah/baykar_frontend/blob/main/javascript_task/public/Ekran%20Resmi%202024-03-09%2001.44.16.png "Javascript Task")
