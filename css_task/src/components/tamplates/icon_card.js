@@ -6,7 +6,7 @@ const IconCard = (props) => {
     <>
       <div
         id="layout"
-        className="flex flex-row justify-between items-start w-full py-[80px]"
+        className="xl:!flex xl:!flex-row xl:justify-between xl:items-start w-full py-[80px] grid-container justify-self-center content-center justify-center"
       >
         {ICON_CARD.map((icon, index) => (
           <IconCardIcon
@@ -14,7 +14,7 @@ const IconCard = (props) => {
             textText={icon.text}
             titleText={icon.title}
             iconColor={icon.iconColor}
-            style={index != 0 ? "ml-[80px]" : ""}
+            style={index != 0 ? "xl:ml-[80px]" : ""}
           />
         ))}
       </div>

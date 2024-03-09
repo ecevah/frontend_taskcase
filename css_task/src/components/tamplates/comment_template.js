@@ -28,7 +28,7 @@ const CommentTemplate = () => {
 
   return (
     <>
-      <div className="flex flex-col w-full py-[50px] relative">
+      <div className="flex flex-col w-full py-[50px] relative xl:mt-0 mt-[50px]">
         <div
           id="layout"
           className="flex flex-row justify-between items-center mt-[30px] mb-[50px]"
@@ -60,6 +60,7 @@ const CommentTemplate = () => {
             </button>
           </div>
         </div>
+
         <Swiper
           onSwiper={(swiper) => (swiperRef.current = swiper)}
           spaceBetween={20}
@@ -68,6 +69,27 @@ const CommentTemplate = () => {
           centeredSlides={true}
           grabCursor={true}
           className="mySwiper"
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+            },
+            570: {
+              slidesPerView: 1.5,
+            },
+
+            787: {
+              slidesPerView: 2,
+            },
+            972: {
+              slidesPerView: 2.5,
+            },
+            1175: {
+              slidesPerView: 3,
+            },
+            1440: {
+              slidesPerView: 3.6,
+            },
+          }}
         >
           {COMMENT_CARD.map((comment, index) => (
             <SwiperSlide key={`Comment ${index}`}>
@@ -84,7 +106,7 @@ const CommentTemplate = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="h-[421px] custom-width min-w-[768px] absolute top-[182px] left-[40px] bg-[#FDE68A]" />
+        <div className="h-[421px] custom-width w-[calc(100%-80px)] max-w-[1280px] min-w-[768px] absolute top-[182px] left-[40px] bg-[#FDE68A]" />
       </div>
     </>
   );

@@ -9,9 +9,9 @@ const HeroCard = (props) => {
     <>
       <div
         id="layout"
-        className="flex flex-row justify-between items-center py-[80px]"
+        className="flex lg:flex-row flex-col justify-between items-center py-[80px]"
       >
-        <div className="flex flex-col h-fit items-start">
+        <div className="flex flex-col h-fit lg:items-start items-center">
           <TitleWithText
             titleText={HERO_CARD.title.text}
             titleColor={HERO_CARD.title.color}

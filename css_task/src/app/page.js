@@ -17,10 +17,12 @@ import Footer from "@/components/tamplates/footer";
 export default function Home() {
   return (
     <>
-      <Header />
-      <HeroCard />
-      <IconCard />
-      <div className="w-0 h-0 border-l-transparent border-l-[100vw] border-l-solid border-b-solid border-b-[816px] border-b-[#FEF3C7] absolute top-[238px] left-[12px] -z-10" />
+      <div className="relative">
+        <Header />
+        <HeroCard />
+        <IconCard />
+        <div className="w-0 h-0 border-l-transparent border-l-[100vw] border-l-solid border-b-solid border-b-[816px] border-b-[#FEF3C7] absolute bottom-0 left-[12px] -z-10" />
+      </div>
       <BuyCardTemplate />
       <VideoCard />
       <CommentTemplate />

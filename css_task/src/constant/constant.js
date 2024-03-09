@@ -33,6 +33,8 @@ export const INSTAGRAM_PATH = "/svg/instagram.svg";
 export const LINKEDIN_PATH = "/svg/linkedin.svg";
 export const GOOGLE_PLAY_PATH = "/svg/GooglePlay.svg";
 export const APP_STORE_PATH = "/svg/AppStore.svg";
+export const HAMBURGER_PATH = "/svg/menu-scale.svg";
+export const X_PATH = "/svg/x.svg";
 
 //WebpImage
 export const PIEDRA_PATH = "/webp/piedra.webp";
@@ -85,13 +87,13 @@ export const HEADER = {
 export const HERO_CARD = {
   title: {
     text: "Collectible Sneakers",
-    size: "text-[72px]",
-    color: "text-custom-dark-blue",
+    size: "text-[72px] lg:text-start !text-center",
+    color: "text-custom-dark-blue ",
   },
   text: {
     text:
       " Sit elit feugiat turpis sed integer integer accumsan turpis. Sed suspendisse nec lorem mauris. Pharetra, eu imperdiet ipsum ultrices amet.",
-    size: "text-[18px]",
+    size: "text-[18px] lg:text-start text-center",
     color: "text-custom-dark-blue",
     textStyle: " ml-[40px] ",
   },
@@ -161,7 +163,7 @@ export const VIDEO_CARD = {
   button: {
     text: "Sign up now",
     boxColor: "border-custom-amber",
-    boxStyle: "p-[16px]",
+    boxStyle: "p-[16px] z-10",
     textStyle: "text-[20px]",
     textColor: "text-custom-amber",
   },

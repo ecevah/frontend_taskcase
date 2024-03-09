@@ -5,14 +5,14 @@ import BuyCards from "../molecules/buy_card/buy_cards";
 const BuyCardTemplate = (props) => {
   return (
     <>
-      <div className="bg-custom-dark-blue w-full relative h-[776px] z-20 my-0 py-0">
+      <div className="bg-custom-dark-blue w-full relative z-20 my-0 py-0">
         <div id="layout" className="flex flex-col py-[80px] z-20">
-          <div className="flex flex-row justify-between mb-[80px] z-20">
+          <div className="flex customsm:flex-row flex-col justify-between items-center mb-[80px] z-20">
             <Title color="text-white" text="The best of the best" />
             <CustomButton
               textStyle="!font-bold !text-[24px] !px-[24px]"
               text="Sign up now"
-              boxStyle="!px-[24px] !py-[20px] z-20"
+              boxStyle="!px-[24px] !py-[20px] z-20 customsm:mt-0 mt-[32px]"
             />
           </div>
           <BuyCards />

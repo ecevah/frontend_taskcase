@@ -4,15 +4,15 @@ import { HEADER } from "@/constant/constant";
 const HeaderItems = () => {
   return (
     <>
-      <div className="flex flex-row items-center">
+      <div className="flex lg:flex-row flex-col lg:items-center items-start">
         {HEADER.items.map((item, index) => (
           <div
             className={
               index == 0
-                ? "mr-[8px]"
+                ? "lg:mr-[8px] lg:my-0 my-4"
                 : index == HEADER.items.length - 1
-                ? "ml-[8px] mr-[16px]"
-                : "mx-[8px]"
+                ? "lg:ml-[8px] lg:mr-[16px] lg:my-0 my-4"
+                : "lg:mx-[8px] lg:my-0 my-4"
             }
             key={`Header İtem ${index}`}
           >

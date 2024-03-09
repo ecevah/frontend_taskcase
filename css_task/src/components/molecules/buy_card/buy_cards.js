@@ -8,7 +8,7 @@ import Image from "next/image";
 const BuyCards = () => {
   return (
     <>
-      <div className="w-full flex flex-row justify-between items-center z-20">
+      <div className="w-full xl:flex xl:flex-row xl:justify-between xl:items-center grid lg:grid-cols-2 gap-10 z-20">
         {BUY_CARD.map((card, index) => (
           <BuyCard
             key={`Buy Card ID ${index}`}

@@ -3,8 +3,8 @@ import WorldMap from "../atoms/world_map/world_map";
 const World = (props) => {
   return (
     <>
-      <div className="w-full h-[717px] bg-custom-amber relative z-[99] flex flex-col justify-center items-center">
-        <div className="absolute py-[42px] right-[calc((100%-1150px)/2)]">
+      <div className="w-full md:h-[717px] h-[807px] bg-custom-amber relative z-[99] flex flex-col justify-center items-center">
+        <div className="absolute md:py-[42px] y-[47px] md:right-[calc((100%-1150px)/2)] -right-[600px] ">
           <WorldMap />
         </div>
         <div className=" flex flex-col justify-start items-center">

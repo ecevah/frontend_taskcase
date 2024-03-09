@@ -18,7 +18,7 @@ const CustomButton = (props) => {
           height="24"
         />
         <p
-          className={`px-[16px] font-medium text-[16px] leading-[24px] tracking-[0.5px] ${
+          className={`px-[16px] font-semibold text-[16px] leading-[24px] tracking-[0.5px] ${
             props.textColor ?? "text-white"
           } ${props.textStyle}`}
         >

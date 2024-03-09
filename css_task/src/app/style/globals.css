@@ -37,6 +37,34 @@ body {
   margin-right: auto;
 }
 
+@media only screen and (max-width: 1360px) {
+  body {
+    background-color: white;
+  }
+  #layout {
+    width: 1000px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #layout {
+    width: calc(100% - 40px);
+  }
+}
+
 #buyShadow {
   box-shadow: 0px 25px 50px -12px rgba(255, 255, 255, 0.25);
 }

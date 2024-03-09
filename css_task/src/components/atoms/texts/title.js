@@ -3,7 +3,7 @@ const Title = (props) => {
     <>
       <h2
         className={`font-extrabold leading-[110%] ${
-          props.size ?? "text-[56px]"
+          props.size ?? "xl:text-[56px] text-[32px]"
         } ${props.color ?? "text-custom-dark-blue"} ${props.style}`}
       >
         {props.text}
