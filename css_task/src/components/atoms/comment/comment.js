@@ -1,6 +1,36 @@
 import Image from "next/image";
 import Text from "../texts/text";
 
+{
+  /*
+This component represents a user's or customer's comment and displays information about the comment.
+
+The component is organized with a set of inner elements within a <div> element. 
+Content is received as props and placed through specific components.
+
+The content consists of the following elements:
+
+- Company logo - added using the Image component. The image of the logo is taken from the props and 
+formatted with specific dimensions.
+- Company name - contained within a <p> element and formatted with a specific text size, weight and 
+spacing. The company name is taken from the component's companyName prop.
+
+- Comment text - Added using the Text component. The comment text is retrieved from the component's text
+ prop and formatted with a specific text size, color, and style.
+
+- User image - Added using the Image component. The image of the user image is taken from the props and 
+formatted with specific dimensions and rounded corners.
+
+- Username and tag - the username is displayed in one <Text> component while the tag is displayed in another 
+<Text> component. This information is taken from the component's name and tag props.
+
+- This component represents a comment and displays the content of the comment, the company name and logo, 
+the user's name and tag. Properties such as style and size can be customized to specific values.
+
+props => companyImage, companyAlt, companyName, text, image, alt, name, tag
+*/
+}
+
 const Comment = (props) => {
   return (
     <>

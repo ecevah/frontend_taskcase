@@ -1,6 +1,23 @@
 import { ARROW_RIGHT_BLACK_PATH, ROCKET_PATH } from "@/constant/constant";
 import Image from "next/image";
 
+{
+  /* 
+It contains a rocket icon, a text content, and a right arrow icon. 
+This component provides the user with a button to display a collection.
+
+The component aligns content horizontally using the flex layout. The 
+button has styling properties such as margins like p-[16px] and rounded edges. 
+There is also an animation effect that changes color when the button is hovered 
+over and clicked.
+
+The content of the button consists of three elements:
+- A rocket icon (retrieved from ROCKET_PATH) - Added using the Image component.
+- The text content is contained within the -p tag and is formatted with a specific text size, weight and spacing.
+- A right arrow icon (taken from ARROW_RIGHT_BLACK_PATH) - also added using the Image component.
+*/
+}
+
 const CollectionButton = (props) => {
   return (
     <>

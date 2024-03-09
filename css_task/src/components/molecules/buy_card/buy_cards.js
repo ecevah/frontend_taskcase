@@ -5,7 +5,28 @@ import Title from "@/components/atoms/texts/title";
 import { BUY_CARD } from "@/constant/constant";
 import Image from "next/image";
 
-const BuyCards = () => {
+{
+  /*
+The component is organized by a series of card elements within a <div> element. 
+Card items are taken from the BUY_CARD constant and mapped onto an array.
+
+For each card element, a <div> element is created. Using the map function, each card element 
+is processed according to its order in the array.
+
+Each card item is created using the BuyCard component. This component takes the image, title, 
+and description of each product and displays them accordingly.
+
+Each card element is animated with the data-aos feature, which adds animation to the page and 
+provides an interactive experience to the user.
+
+If the number of shopping cards is odd, the cards are centered (justify-center class is added). 
+Also, if the last card is odd and the page has an expanded view (one of the classes md:grid-cols-2 or 
+xl:grid-cols-3 is added), that last card spans an expanded column (md:col-span-2 or xl:col-span-1 class is added).
+
+*/
+}
+
+const BuyCards = (props) => {
   const isOdd = BUY_CARD.length % 2 !== 0; // Check if the number of cards is odd
   return (
     <>

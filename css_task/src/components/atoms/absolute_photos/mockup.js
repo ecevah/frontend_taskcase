@@ -1,6 +1,27 @@
 import { CONVERSE_PATH, PIEDRA_PATH, PLAY_PATH } from "@/constant/constant";
 import Image from "next/image";
 
+{
+  /* 
+This component creates a simulation/mockup area containing a specific image 
+along with a play icon to play that image. The image and play icon path are 
+taken as props and the appearance of the component is shaped according to these 
+properties.
+
+The component animates the page using the data-aos property. It also checks the width 
+and height properties that come as props and sets the width and height of the component 
+accordingly. Default values are provided, but these properties can be passed externally.
+
+The widget has a header section (div) with a series of colored circles inside it, and then 
+a div containing the main image. If there is video value in props, a play icon will be displayed. The image is added as the Image component and is provided in specific sizes.
+
+This component creates a simulation/mockup space and adds animation along with its visual 
+content to provide an interactive experience to the user.
+
+props => widht, height, image, video
+*/
+}
+
 const Mockup = (props) => {
   return (
     <>

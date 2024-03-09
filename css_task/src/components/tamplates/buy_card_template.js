@@ -2,6 +2,20 @@ import CustomButton from "../atoms/buttons/custom_buttons";
 import Title from "../atoms/texts/title";
 import BuyCards from "../molecules/buy_card/buy_cards";
 
+{
+  /*
+The component is organized with a set of inner elements within a <div> element. 
+
+The interface is created through different components:
+- Title - Added using the Title component. The title text appears white and centered.
+- Custom Button - Added using the CustomButton component. The button text is set to "Sign up now".
+- Shopping Cards - Added using the BuyCards component. This component displays shopping cards.
+Additionally, the background color is set to dark blue (bg-custom-dark-blue). 
+Within the component there are also a number of absolutely positioned div elements with circular backgrounds 
+of different colors and different sizes. These div elements add visual interest to the design by creating circles of different colors and different sizes.
+*/
+}
+
 const BuyCardTemplate = (props) => {
   return (
     <>

@@ -8,6 +8,23 @@ import {
 } from "@/constant/constant";
 import Image from "next/image";
 
+{
+  /* 
+
+This component creates images with different colored icons. Icons are 
+taken from fixed file paths such as TROPHY_PATH, TUNNEL_PATH and TV_PATH. 
+Additionally, colors defined as blue, green and pink are taken as a variable prop.
+
+If the color variable coming as props is "blue", a blue icon is added to a cup icon. 
+These icons are added as Image components of specific sizes. The same process is carried 
+out for the colors "green" and "pink". There are also className props with different CSS 
+classes assigned for each case.
+
+props => color
+
+*/
+}
+
 const IconWithColor = (props) => {
   return (
     <>
