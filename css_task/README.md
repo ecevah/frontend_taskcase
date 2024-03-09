@@ -52,4 +52,6 @@ To run this project locally, follow these steps:
 
 ![Css Task](https://github.com/ecevah/baykar_frontend/blob/main/css_task/public/screenshots/Ekran%20Resmi%202024-03-09%2012.34.49.png "CSS Task")
 
+![Css Task](https://github.com/ecevah/baykar_frontend/blob/main/css_task/public/screenshots/Ekran%20Resmi%202024-03-09%2012.34.47.png "CSS Task")
+
 ![Css Task](https://github.com/ecevah/baykar_frontend/blob/main/css_task/public/screenshots/Ekran%20Resmi%202024-03-09%2012.35.55.png "CSS Task")
