@@ -8,7 +8,7 @@ const BuyCard = (props) => {
     <>
       <div
         id="buyShadow"
-        className=" flex flex-col w-[394.67px] justify-start items-start bg-custom-dark-blue border-solid border-[1px] border-custom-dark-blue rounded-[10px] overflow-hidden p-0"
+        className=" flex flex-col w-[394.67px] max-[440px]:w-full justify-start items-start bg-custom-dark-blue border-solid border-[1px] border-custom-dark-blue rounded-[10px] overflow-hidden p-0"
       >
         <Image
           src={props.image}

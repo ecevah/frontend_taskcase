@@ -5,8 +5,9 @@ const CustomButton = (props) => {
   return (
     <>
       <button
-        className={`border-solid border-[2px] rounded-[8px] p-[12px] w-fit flex flex-row items-center justify-center ${
-          props.boxColor ?? "border-white"
+        data-aos="fade-up-right"
+        className={`border-solid border-[2px] rounded-[8px] p-[12px] w-fit flex flex-row items-center justify-center hover:bg-[rgb(0,0,0,0.05)] hover:shadow-lg ${
+          props.boxColor ?? "border-white hover:!bg-[rgb(255,255,255,0.3)]"
         } ${props.boxStyle}`}
         href="#"
       >

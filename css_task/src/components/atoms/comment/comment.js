@@ -4,7 +4,7 @@ import Text from "../texts/text";
 const Comment = (props) => {
   return (
     <>
-      <div className="flex flex-col justify-between items-start p-[32px] w-[384px] h-[430px] border-solid border-[#E2E8F0] border-[1px] rounded-[20px] shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1)] bg-white">
+      <div className="flex flex-col justify-between items-start p-[32px] w-[384px] h-[430px] max-[395px]:w-[97%] border-solid border-[#E2E8F0] border-[1px] rounded-[20px] shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1)] bg-white">
         <div className="flex flex-row justify-start items-center">
           <Image
             src={props.companyImage}

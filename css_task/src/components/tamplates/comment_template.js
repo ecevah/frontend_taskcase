@@ -33,10 +33,13 @@ const CommentTemplate = () => {
           id="layout"
           className="flex flex-row justify-between items-center mt-[30px] mb-[50px]"
         >
-          <Title text="Because they love us" />
-          <div className="flex flex-row justify-center items-center">
+          <Title
+            text="Because they love us"
+            style="max-[367px]:text-center text-start"
+          />
+          <div className="customb:flex flex-row justify-center items-center hidden">
             <button
-              className="p-[12px] border-solid border-custom-amber border-[2px] rounded-full mr-[24px]"
+              className="p-[12px] border-solid border-custom-amber border-[2px] rounded-full mr-[24px] hover:bg-[rgb(0,0,0,0.05)]"
               onClick={goPrev}
             >
               <Image
@@ -48,7 +51,7 @@ const CommentTemplate = () => {
               />
             </button>
             <button
-              className="p-[12px] border-solid border-custom-amber border-[2px] rounded-full"
+              className="p-[12px] border-solid border-custom-amber border-[2px] rounded-full hover:bg-[rgb(0,0,0,0.05)]"
               onClick={goNext}
             >
               <Image
@@ -106,7 +109,7 @@ const CommentTemplate = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="h-[421px] custom-width w-[calc(100%-80px)] max-w-[1280px] min-w-[768px] absolute top-[182px] left-[40px] bg-[#FDE68A]" />
+        <div className="h-[421px] custom-width md:w-[calc(100%-80px)] w-full max-w-[1280px] min-w-[768px] absolute top-[182px] left-0 md:left-[40px] bg-[#FDE68A]" />
       </div>
     </>
   );

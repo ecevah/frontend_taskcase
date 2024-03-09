@@ -19,7 +19,7 @@ const IconWithColor = (props) => {
             width={45}
             height={45}
             alt="blue"
-            className="absolute top-[2px] left-[27px]"
+            className="absolute top-[2px] left-[27px] rotateAnimation"
           />
         </div>
       ) : props.color == "green" ? (
@@ -30,7 +30,7 @@ const IconWithColor = (props) => {
             width={40}
             height={40}
             alt="blue"
-            className="absolute -top-[2px] left-[23px]"
+            className="absolute -top-[2px] left-[23px] rotateReverseAnimation"
           />
         </div>
       ) : (
@@ -41,7 +41,7 @@ const IconWithColor = (props) => {
             width={40}
             height={40}
             alt="blue"
-            className="absolute top-[1px] left-[42px]"
+            className="absolute top-[1px] left-[42px] jumpAnimation"
           />
         </div>
       )}

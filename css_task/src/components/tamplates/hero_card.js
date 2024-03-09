@@ -11,7 +11,10 @@ const HeroCard = (props) => {
         id="layout"
         className="flex lg:flex-row flex-col justify-between items-center py-[80px]"
       >
-        <div className="flex flex-col h-fit lg:items-start items-center">
+        <div
+          className="flex flex-col h-fit lg:items-start items-center max-[383px]:scale-[80%]"
+          data-aos="fade-up-right"
+        >
           <TitleWithText
             titleText={HERO_CARD.title.text}
             titleColor={HERO_CARD.title.color}

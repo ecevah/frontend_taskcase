@@ -8,10 +8,16 @@ const World = (props) => {
           <WorldMap />
         </div>
         <div className=" flex flex-col justify-start items-center">
-          <div className="z-10 font-extrabold text-[96px] leading-[110%] text-[#FFFBEB]">
+          <div
+            className="z-10 font-extrabold text-[96px] leading-[110%] text-[#FFFBEB]"
+            data-aos="fade-up-left"
+          >
             11,658,467
           </div>
-          <div className="z-10 font-extrabold text-[56px] leading-[110%] text-[#FFFBEB]">
+          <div
+            className="z-10 font-extrabold text-[56px] leading-[110%] text-[#FFFBEB]"
+            data-aos="fade-up-right"
+          >
             Shoes Collected
           </div>
         </div>

@@ -5,7 +5,8 @@ const IconCardIcon = (props) => {
   return (
     <>
       <div
-        className={`flex flex-col w-[373.33px] min-w-[373.33px] items-center xl:items-start ${props.style}`}
+        data-aos="fade-up"
+        className={`flex flex-col w-[373.33px] min-w-[373.33px] max-[400px]:min-w-full max-[400px]:w-full items-center xl:items-start ${props.style}`}
       >
         <IconWithColor color={props.iconColor} />
         <Text

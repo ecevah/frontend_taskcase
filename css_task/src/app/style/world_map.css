@@ -235,7 +235,7 @@
   position: absolute;
   top: 112px;
   left: 298px;
-  cursor: pointer; /* Changes the cursor to indicate it's clickable/hoverable */
+  cursor: pointer;
 }
 
 .tooltip-marker:hover .tooltiptext {
@@ -253,20 +253,20 @@
   padding: 5px 0;
   position: absolute;
   z-index: 1;
-  bottom: 125%; /* Position the tooltip above the marker */
+  bottom: 125%;
   left: 50%;
-  margin-left: -60px; /* Use half of the width value to align the tooltip */
+  margin-left: -60px;
   opacity: 0;
-  transition: opacity 0.3s, visibility 0.3s; /* Smooth transitions for opacity and visibility */
+  transition: opacity 0.3s, visibility 0.3s;
 }
 
 .tooltiptext::after {
   content: "";
   position: absolute;
-  top: 100%; /* Arrow bottom position */
+  top: 100%;
   left: 50%;
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: white transparent transparent transparent; /* Triangle shape */
+  border-color: white transparent transparent transparent;
 }

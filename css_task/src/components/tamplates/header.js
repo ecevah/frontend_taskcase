@@ -7,10 +7,8 @@ import { HAMBURGER_PATH, HEADER, X_PATH } from "@/constant/constant";
 import Image from "next/image";
 
 const Header = () => {
-  // Drawer'ın açık/kapalı durumunu tutacak state
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
-  // Drawer'ı açıp kapatmak için fonksiyon
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
   };
@@ -40,7 +38,10 @@ const Header = () => {
           />
         </div>
         {isDrawerOpen && (
-          <div className="drawer fixed top-0 right-0 h-full w-[250px] bg-white shadow-lg z-50 p-[30px]">
+          <div
+            className="drawer fixed top-0 right-0 h-full w-[250px] bg-white shadow-lg z-50 p-[30px]"
+            data-aos="fade-left"
+          >
             <button onClick={toggleDrawer}>
               <Image src={X_PATH} alt="close" width={24} height={24} />
             </button>

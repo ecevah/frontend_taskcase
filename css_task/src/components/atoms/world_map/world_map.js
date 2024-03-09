@@ -201,8 +201,8 @@ const WorldMap = () => {
               <Image
                 src={word.image}
                 alt="Cool Shoes"
-                layout="fill"
-                objectFit="contain"
+                width={256}
+                height={200}
                 className="rounded-lg"
               />
             </div>

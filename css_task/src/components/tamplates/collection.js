@@ -31,13 +31,13 @@ const Collection = (props) => {
 Nec magna sed interdum sit purus tellus. Et volutpat proin neque placerat at bibendum quam tellus."
           />
           <div className="xl:mt-[80px] mt-[32px] pb-[268px] w-full relative">
-            <div className="flex xl:flex-col flex-row justify-start items-start w-full overflow-x-scroll">
+            <div className="flex xl:flex-col flex-row justify-start items-start w-full overflow-x-scroll scrollOff">
               {COLLECTION_CARD.map((collection, index) => (
                 <button
                   key={`Buttons ${index + 1}`}
-                  className={`group flex flex-row p-[16px] min-w-[256px] justify-between items-center my-[8px] xl:mx-0 mx-4 rounded-[8px] hover:bg-white w-[256px] ${
+                  className={`group flex flex-row p-[16px] min-w-[256px] justify-between items-center my-[8px] xl:mx-0 mx-4 rounded-[8px] hover:bg-white hover:shadow-md w-[256px] ${
                     state === index
-                      ? "bg-white collectionShadow"
+                      ? "bg-white collectionShadow shadow-md"
                       : "bg-transparent"
                   }`}
                   onClick={() => handleButton(index)}

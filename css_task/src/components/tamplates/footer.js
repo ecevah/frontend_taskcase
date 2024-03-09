@@ -7,61 +7,55 @@ import Market from "../atoms/footer/market";
 const Footer = (props) => {
   return (
     <>
-      <div className="w-full bg-custom-dark-blue">
+      <div className="w-full bg-custom-dark-blue text-white">
         <div
           id="layout"
-          className="flex flex-row justify-between items-start py-[48px]"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 py-[48px] px-4"
+          data-aos="fade-up"
         >
-          <div className="flex flex-col justify-start items-start w-[284px]">
-            <FooterTitle text={FOOTER.items[0].title} />
-            {FOOTER.items[0].item.map((item, index) => (
-              <FooterItem key={index} text={item} />
-            ))}
-          </div>
-          <div className="flex flex-col justify-start items-start w-[284px]">
-            <FooterTitle text={FOOTER.items[1].title} />
-            {FOOTER.items[0].item.map((item, index) => (
-              <FooterItem key={index} text={item} />
-            ))}
-          </div>
-          <div className="flex flex-col justify-start items-start w-[284px]">
-            <FooterTitle text={FOOTER.items[2].title} />
-            {FOOTER.items[0].item.map((item, index) => (
-              <FooterItem key={index} text={item} />
-            ))}
-          </div>
-          <div className="flex flex-col justify-between items-start w-[284px]">
+          {FOOTER.items.map((footerGroup, index) => (
+            <div
+              key={`Footer Group ${index}`}
+              className="flex flex-col justify-start lg:items-start items-center"
+            >
+              <FooterTitle text={footerGroup.title} />
+              {footerGroup.item.map((item, itemIndex) => (
+                <FooterItem
+                  key={`Footer Item ${index} ${itemIndex}`}
+                  text={item}
+                />
+              ))}
+            </div>
+          ))}
+          <div
+            className="flex flex-col justify-start lg:items-start items-center w-full lg:w-auto px-4 lg:px-0"
+            data-aos="fade-up"
+          >
             <FooterTitle text={FOOTER.social.title} />
-            <div className="mt-[20px] mb-[97px]">
-              <Image
-                src={FOOTER.social.market[0]}
-                width={120}
-                height={40}
-                alt="apple"
-                className="mb-[12px]"
-              />
-              <Image
-                src={FOOTER.social.market[1]}
-                width={135}
-                height={40}
-                alt="google"
-              />
+            <div className="mt-5 mb-24 lg:mt-[20px] lg:mb-[97px] flex flex-col lg:items-start items-center">
+              {FOOTER.social.market.map((market, marketIndex) => (
+                <Image
+                  src={market}
+                  width={marketIndex === 0 ? 120 : 135}
+                  height={40}
+                  alt={marketIndex === 0 ? "apple" : "google"}
+                  className="mb-4 last:mb-0 cursor-pointer"
+                  key={`Market ${marketIndex}`}
+                />
+              ))}
             </div>
             <Market />
           </div>
         </div>
+        <div id="layout" className="w-full h-[1px] bg-[#e2e8f089] my-4"></div>
         <div
           id="layout"
-          className="w-full h-[1px] bg-[#e2e8f089] mt-[4px]"
-        ></div>
-        <div
-          id="layout"
-          className="flex flex-row justify-between w-full items-center py-[24px]"
+          className="flex flex-col md:flex-row justify-between items-center py-6 px-4 lg:py-[24px] lg:px-0"
         >
           <FooterItem text={FOOTER.copyright.title} />
-          <div className="flex flex-row justify-start items-start">
+          <div className="flex flex-wrap justify-start items-center mt-4 lg:mt-0">
             {FOOTER.copyright.items.map((item, i) => (
-              <div className="mr-[32px]" key={i}>
+              <div className="mr-8 lg:mb-0" key={`Footer copyright ${i}`}>
                 <FooterItem text={item} />
               </div>
             ))}
@@ -71,7 +65,7 @@ const Footer = (props) => {
                 width={20}
                 height={20}
                 alt="world icon"
-                className="mr-[8px]"
+                className="mr-2"
               />
               <FooterItem text="EN" />
             </div>
